@@ -873,6 +873,9 @@ void serializeInfo(JsonObject root)
   root[F("time")] = time;
 
   UsermodManager::addToJsonInfo(root);
+  #ifdef WLED_ENABLE_ADALIGHT
+  serializeSerialDiagnostics(root);
+  #endif
 
   uint16_t os = 0;
   #ifdef WLED_DEBUG

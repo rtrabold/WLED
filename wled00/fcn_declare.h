@@ -587,6 +587,8 @@ uint32_t sqrt32_bw(uint32_t x);
 
 //wled_serial.cpp
 void handleSerial();
+void initSerialDiagnostics();
+void serializeSerialDiagnostics(JsonObject root);
 void updateBaudRate(uint32_t rate);
 
 //wled_server.cpp
