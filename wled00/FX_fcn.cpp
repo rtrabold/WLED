@@ -219,6 +219,7 @@ void Segment::resetIfRequired() {
   }
   if (pixels) for (size_t i = 0; i < length(); i++) pixels[i] = BLACK; // clear pixel buffer
   step = 0; call = 0; aux0 = 0; aux1 = 0;
+  effectClocks.reset();
   reset = false;
   #ifdef WLED_ENABLE_GIF
   endImagePlayback(this);

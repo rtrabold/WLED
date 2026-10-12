@@ -19,6 +19,7 @@
 #include <vector>
 #include "wled.h"
 #include "colors.h"
+#include "FX_time.h"
 #ifdef WLED_DEBUG
   // enable additional debug output
   #if defined(WLED_DEBUG_HOST)
@@ -465,6 +466,7 @@ class Segment {
     mutable uint16_t aux0;  // custom var
     mutable uint16_t aux1;  // custom var
     byte     *data; // effect data pointer
+    EffectClocks effectClocks; // independent phase/timer state, copied with effect transitions
 
     static uint16_t maxWidth, maxHeight;  // these define matrix width & height (max. segment dimensions)
 
