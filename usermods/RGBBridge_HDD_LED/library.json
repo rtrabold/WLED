@@ -1,0 +1,8 @@
+{
+  "name": "RGBBridge_HDD_LED",
+  "version": "0.2.0",
+  "description": "WLED ESP32 HDD_LED input to independent PWM LED output with fade and blinking",
+  "build": { "libArchive": false },
+  "frameworks": "arduino",
+  "platforms": "espressif32"
+}

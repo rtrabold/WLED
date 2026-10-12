@@ -1,0 +1,2 @@
+[env:esp32dev]
+custom_usermods = audioreactive RGBBridgeEventFX RGBBridge_HDD_LED
