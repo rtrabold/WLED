@@ -1,0 +1,6 @@
+{
+  "name": "RGBBridgeEventFX",
+  "version": "1.4.3",
+  "build": { "libArchive": false },
+  "dependencies": {}
+}
